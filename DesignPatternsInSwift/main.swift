@@ -10,3 +10,8 @@ import Foundation
 
 print("Hello, World!")
 
+var c = 0;
+for arg in Process.arguments {
+    print("argument \(c) is: \(arg)")
+    c += 1
+}
