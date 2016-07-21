@@ -8,10 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+let doc001 = Document(name: "Doc_001")
+let doc002 = Document(name: "Doc_002")
+let doc003 = Document(name: "Doc_003")
 
-var c = 0;
-for arg in Process.arguments {
-    print("argument \(c) is: \(arg)")
-    c += 1
-}
+doc001.registerObserver(doc002)
+doc001.registerObserver(doc003)
+doc002.registerObserver(doc003)
+doc002.registerObserver(doc001)
+doc003.registerObserver(doc001)
+doc003.registerObserver(doc002)
+
+doc001.notifyObserver()
+doc002.notifyObserver()
+doc003.notifyObserver()
+
+print("Hello, World!")
