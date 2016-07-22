@@ -8,16 +8,28 @@
 
 import Foundation
 
-class Document: DocumentProtocol, ObservableProtocol, ObserverProtocol {
+class Document: DocumentProtocol, ObservableProtocol, ObserverProtocol, DocumentContextProtocol {
     var _observers = [ObserverProtocol]()
     var _name: String
+    var _state: DocumentStateProtocol
     
-    init(name: String) {
-        self._name = name
+    init(name: String, state: DocumentStateProtocol) {
+        _name = name
+        _state = state
     }
     
     var name: String {
         return _name
+    }
+    
+    var state: DocumentStateProtocol {
+        get {
+            return _state
+        }
+        set (newState) {
+            notifyObserver()
+            _state = newState
+        }
     }
     
     func registerObserver(observer: ObserverProtocol) {

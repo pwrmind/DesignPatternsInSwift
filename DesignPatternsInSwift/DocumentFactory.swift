@@ -9,10 +9,10 @@
 import Foundation
 
 class DocumentFactory {
-    func registerObserver(documentType: String) -> Document {
+    func registerObserver(documentType: String, state: DocumentStateProtocol) -> Document {
         if documentType.isEmpty {
             
         }
-        return Document(name: documentType)
+        return Document(name: documentType, state: state)
     }
 }

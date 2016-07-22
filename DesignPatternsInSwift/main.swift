@@ -8,9 +8,12 @@
 
 import Foundation
 
-let doc001 = Document(name: "Doc_001")
-let doc002 = Document(name: "Doc_002")
-let doc003 = Document(name: "Doc_003")
+let docStartState = DocumentStartState()
+let docStopState = DocumentStopState()
+
+let doc001 = Document(name: "Doc_001", state: docStartState)
+let doc002 = Document(name: "Doc_002", state: docStartState)
+let doc003 = Document(name: "Doc_003", state: docStartState)
 
 doc001.registerObserver(doc002)
 doc001.registerObserver(doc003)
@@ -19,18 +22,10 @@ doc002.registerObserver(doc001)
 doc003.registerObserver(doc001)
 doc003.registerObserver(doc002)
 
-doc001.notifyObserver()
-doc002.notifyObserver()
-doc003.notifyObserver()
-
-let documentFactory = DocumentFactory()
-
-let doc004 = documentFactory.registerObserver("Koko")
-
-doc004.registerObserver(doc001)
-doc004.registerObserver(doc002)
-doc004.registerObserver(doc003)
-
-doc004.notifyObserver()
+print(doc001.state.name)
+doc001.state = docStopState
+print(doc001.state.name)
+doc002.state = docStopState
+doc003.state = docStopState
 
 print("Hello, World!")

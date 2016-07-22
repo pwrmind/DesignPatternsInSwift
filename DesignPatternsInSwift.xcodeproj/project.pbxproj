@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D595C4721D414476004D30FA /* DocumentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595C4711D414476004D30FA /* DocumentProtocol.swift */; };
 		D595C4741D41593F004D30FA /* DocumentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595C4731D41593F004D30FA /* DocumentFactory.swift */; };
+		D595C4761D42A610004D30FA /* DocumentStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595C4751D42A610004D30FA /* DocumentStateProtocol.swift */; };
+		D595C47A1D42A76D004D30FA /* DocumentStartState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595C4791D42A76D004D30FA /* DocumentStartState.swift */; };
+		D595C47C1D42AC51004D30FA /* DocumentContextProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595C47B1D42AC51004D30FA /* DocumentContextProtocol.swift */; };
+		D595C47E1D42AD76004D30FA /* DocumentStopState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595C47D1D42AD76004D30FA /* DocumentStopState.swift */; };
 		D5FA889E1D380DC20038BCC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA889D1D380DC20038BCC6 /* main.swift */; };
 		D5FA88A51D38111C0038BCC6 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA88A41D38111C0038BCC6 /* Document.swift */; };
 		D5FA88A71D38145F0038BCC6 /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA88A61D38145F0038BCC6 /* DocumentRepository.swift */; };
@@ -31,6 +35,10 @@
 /* Begin PBXFileReference section */
 		D595C4711D414476004D30FA /* DocumentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentProtocol.swift; sourceTree = "<group>"; };
 		D595C4731D41593F004D30FA /* DocumentFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentFactory.swift; sourceTree = "<group>"; };
+		D595C4751D42A610004D30FA /* DocumentStateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentStateProtocol.swift; sourceTree = "<group>"; };
+		D595C4791D42A76D004D30FA /* DocumentStartState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentStartState.swift; sourceTree = "<group>"; };
+		D595C47B1D42AC51004D30FA /* DocumentContextProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentContextProtocol.swift; sourceTree = "<group>"; };
+		D595C47D1D42AD76004D30FA /* DocumentStopState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentStopState.swift; sourceTree = "<group>"; };
 		D5FA889A1D380DC20038BCC6 /* DesignPatternsInSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatternsInSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FA889D1D380DC20038BCC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D5FA88A41D38111C0038BCC6 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 				D5FA88AA1D39604E0038BCC6 /* ObserverProtocol.swift */,
 				D595C4711D414476004D30FA /* DocumentProtocol.swift */,
 				D595C4731D41593F004D30FA /* DocumentFactory.swift */,
+				D595C4751D42A610004D30FA /* DocumentStateProtocol.swift */,
+				D595C4791D42A76D004D30FA /* DocumentStartState.swift */,
+				D595C47B1D42AC51004D30FA /* DocumentContextProtocol.swift */,
+				D595C47D1D42AD76004D30FA /* DocumentStopState.swift */,
 			);
 			path = DesignPatternsInSwift;
 			sourceTree = "<group>";
@@ -137,11 +149,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D595C4761D42A610004D30FA /* DocumentStateProtocol.swift in Sources */,
+				D595C47E1D42AD76004D30FA /* DocumentStopState.swift in Sources */,
 				D5FA88AB1D39604E0038BCC6 /* ObserverProtocol.swift in Sources */,
 				D5FA88A71D38145F0038BCC6 /* DocumentRepository.swift in Sources */,
 				D595C4721D414476004D30FA /* DocumentProtocol.swift in Sources */,
 				D5FA88A51D38111C0038BCC6 /* Document.swift in Sources */,
 				D5FA88A91D395A640038BCC6 /* ObservableProtocol.swift in Sources */,
+				D595C47C1D42AC51004D30FA /* DocumentContextProtocol.swift in Sources */,
+				D595C47A1D42A76D004D30FA /* DocumentStartState.swift in Sources */,
 				D5FA889E1D380DC20038BCC6 /* main.swift in Sources */,
 				D595C4741D41593F004D30FA /* DocumentFactory.swift in Sources */,
 			);
