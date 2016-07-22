@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol DocumentProtocol {
-    var name: String { get }
-}
-
 class Document: DocumentProtocol, ObservableProtocol, ObserverProtocol {
     var _observers = [ObserverProtocol]()
     var _name: String
@@ -44,6 +40,6 @@ class Document: DocumentProtocol, ObservableProtocol, ObserverProtocol {
     }
     
     func notify(documentName: String) {
-        print(documentName)
+        print("\(self.name): the ducument \(documentName) is update")
     }
 }

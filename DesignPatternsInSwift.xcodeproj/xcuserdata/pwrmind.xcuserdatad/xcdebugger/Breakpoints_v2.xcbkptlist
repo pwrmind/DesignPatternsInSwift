@@ -6,45 +6,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DesignPatternsInSwift/main.swift"
-            timestampString = "490814939.187931"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DesignPatternsInSwift/Document.swift"
-            timestampString = "490814939.187931"
+            timestampString = "490822719.09809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "removeObserver(_:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DesignPatternsInSwift/main.swift"
-            timestampString = "490815379.069607"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignPatternsInSwift.Document.removeObserver (DesignPatternsInSwift.ObserverProtocol) -&gt; ()"
+                  moduleName = "DesignPatternsInSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwrmind/Documents/projects/DesignPatternsInSwift/DesignPatternsInSwift/Document.swift"
+                  timestampString = "490822720.838486"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for DesignPatternsInSwift.ObservableProtocol.removeObserver (DesignPatternsInSwift.ObserverProtocol) -&gt; () in conformance DesignPatternsInSwift.Document : DesignPatternsInSwift.ObservableProtocol in DesignPatternsInSwift"
+                  moduleName = "DesignPatternsInSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwrmind/Documents/projects/DesignPatternsInSwift/DesignPatternsInSwift/Document.swift"
+                  timestampString = "490822720.838671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -54,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DesignPatternsInSwift/main.swift"
-            timestampString = "490815379.069607"
+            timestampString = "490822719.09809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26">
+            startingLineNumber = "36"
+            endingLineNumber = "36">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

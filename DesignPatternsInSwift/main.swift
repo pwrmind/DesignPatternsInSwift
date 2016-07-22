@@ -23,4 +23,14 @@ doc001.notifyObserver()
 doc002.notifyObserver()
 doc003.notifyObserver()
 
+let documentFactory = DocumentFactory()
+
+let doc004 = documentFactory.registerObserver("Koko")
+
+doc004.registerObserver(doc001)
+doc004.registerObserver(doc002)
+doc004.registerObserver(doc003)
+
+doc004.notifyObserver()
+
 print("Hello, World!")
